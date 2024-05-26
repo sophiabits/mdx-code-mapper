@@ -1,6 +1,6 @@
 {
   "name": "mdx-code-mapper",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Run programs against your Markdown code blocks",
   "author": "Sophia Willows <hello@sophiabits.com> (https://sophiabits.com/)",
   "main": "dist/index.js",
@@ -20,7 +20,8 @@
   "sideEffects": false,
   "scripts": {
     "build": "rimraf dist && tsc",
-    "dev": "tsx ./src/index.ts"
+    "dev": "tsx ./src/index.ts",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
